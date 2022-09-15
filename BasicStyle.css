@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* font-family: 'Open Sans', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+h1, h2, a{
+    font-family: 'Raleway', sans-serif;
+
+}
+body{
+    background-color: hsl(217, 28%, 10%);
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+main{
+    height: 100vh;
+    max-width: 100vw;
+}
+
+/* Header And Nav Section Style Start */
+header{
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .Logo img{
+    width: 100px;
+}
+header nav{
+    width: 25%;
+    padding: 10px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: hsl(0, 0%, 80%);
+}
+header ul li a:hover{
+   cursor: pointer;
+   color:  hsl(0, 0%, 100%);
+   font-weight: bold;
+   border-bottom: 1px solid  hsl(0, 0%, 100%);
+}
+
+/* Header And Nav Section Style End */
+
+/* Home Style Start */
+#home{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+#home .poster{
+    margin-top: 20px;
+    height: 50%;
+    width: 50%;
+    background-image: url(./images/illustration-intro.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#home .intro{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 5px;
+
+}
+#home .intro h1{
+    font-size: 38px;
+}
+#home .intro p{
+    font-size: 20px;
+    width:90%;
+    line-height: 1.5em;
+}
+#home .intro  button{
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    width: 35%;
+    color: white;
+    background: linear-gradient(to right bottom, #63e1d9, #33a2d0);
+    padding: 15px;
+    border-radius: 50px;
+}
+#home .intro  button:hover{
+   cursor: pointer;
+   background: #8adae3;
+}
+
+/* Home Style End */
+
+
+/* Features Style Start */
+
+#Features{
+    margin-top: 25px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 10px;
+    gap: 1em;
+}
+#Features .Items{
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5em;
+   text-align: center;
+}
+#Features .Items h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+#Features .Items p{
+    font-size: 18px;
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.5em;
+}
+/* Features Style End */
+
+
+/* Productive Style Start */
+#Productive{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 10px;
+}
+
+#Productive .Prodctive-Poster{
+    background-image: url(./images/illustration-stay-productive.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 70%;
+
+}
+#Productive .Productive-text{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+}
+#Productive .Productive-text h2{
+   font-size: 35px;
+   width: 50%;
+   font-weight: 700;
+}
+#Productive .Productive-text p{
+   font-size: 18px;
+   line-height: 1.8em;
+}
+   
+#Productive .Productive-text a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    border-bottom: 2px solid  hsl(176, 68%, 64%);
+    border-radius: 2px;
+}
+   
+#Productive .Productive-text a:hover{
+    color: white;
+    border-color: white;
+}
+
+/* Productive Style End */
+
+
+/* Review Style Start */
+#Review{
+    /* border: 2px solid red; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 10px;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+   background-position-x: 5%;
+   background-position-y: 1.5%;
+}
+#Review .Review-Card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    border-radius: 5px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px;
+    gap: 1.5em;
+    height: 80%;
+}
+#Review .Review-Card p{
+
+    font-size: 15px;
+}
+#Review .Review-Card .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+}
+#Review .Review-Card .profile  img{
+    width: 30px;
+   border-radius: 50px;
+}
+#Review .Review-Card .profile .client-name p{
+    font-size: 12px;
+}
+#Review .Review-Card .profile .client-name span{
+    font-size: 10px;
+}
+/* Review Style End */
+
+
+
+/* EarlyAccess Style Start */
+
+#EarlyAccess{
+    background-color: hsl(217, 28%, 15%);
+    height: 40vh;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 5em ;
+    border-radius: 10px;
+    position: relative;
+    z-index: 15;
+    bottom: -100px;
+}
+#EarlyAccess h2{
+    font-size: 35px;
+}
+#EarlyAccess p{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+#EarlyAccess  .FormSection{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+#EarlyAccess .FormSection form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+#EarlyAccess .FormSection form #EmailBox{
+    padding: 15px;
+    width: 65%;
+    border-radius: 50px;
+}
+#EarlyAccess .FormSection form #AccessFreeButton{
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    width: 35%;
+    color: white;
+    background: linear-gradient(to right bottom, #63e1d9, #33a2d0);
+    padding: 15px;
+    border-radius: 50px;
+}
+#EarlyAccess .FormSection form #AccessFreeButton:hover{
+    cursor: pointer;
+    background: #8adae3;
+}
+#EarlyAccess .FormSection #ErrorMsg{
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 100%, 63%);
+    display: none;
+
+}
+/* EarlyAccess Style End */
+
+
+/* footer Style Start */
+footer{
+    height: 70vh;
+    background-color: hsl(216, 53%, 9%);
+    color: white;
+    padding: 5em;
+    padding-top: 10em;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+    column-gap: 1.5em;
+}
+footer .Logo-Location{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer .Logo-Location .logo {
+    margin-left: 2em;
+}
+footer .Logo-Location .logo img{
+   width: 100px;
+}
+footer .Logo-Location .location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em;
+}
+footer .Logo-Location .location p{
+    width: 100%;
+}
+footer .Contact{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   gap: 2em;
+   padding: 2em;
+}
+footer .Contact .phone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+footer .Contact .Email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+footer .Links{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    text-align: start;
+    justify-content: start;
+    padding: 3em 1em;
+}
+footer .Links a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: hsl(0, 0%, 80%);
+}
+footer .Links a:hover{
+    cursor: pointer;
+    color:  hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+footer .SocialSites{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+footer .SocialSites i{
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50px;
+}
+footer .SocialSites i:hover{
+    color:  hsl(176, 68%, 64%);
+    border-color:  hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+/* footer Style End */

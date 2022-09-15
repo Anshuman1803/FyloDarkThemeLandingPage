@@ -1,0 +1,152 @@
+@media screen and (max-width: 950px) {
+    main {
+        height: fit-content;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header .Logo img {
+        width: 60px;
+    }
+
+    header nav {
+        width: 55%;
+    }
+
+    #home {
+        height: 100vh;
+        background-image: url(./images/bg-curvy-mobile.svg);
+        background-position: center;
+    }
+
+    #home .poster {
+        width: 100%;
+    }
+
+    #home .intro {
+        width: 100%;
+        padding: 3px 0px;
+        padding-bottom: 5px;
+    }
+
+    #home .intro h1 {
+        font-size: 25px;
+    }
+
+    #home .intro p {
+        width: 100%;
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    #home .intro button {
+        width: 70%;
+    }
+
+    #Features {
+        grid-template-columns: 1fr;
+        height: 200vh;
+    }
+
+    #Features .Items {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #Features .Items p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #Productive {
+        flex-direction: column;
+    }
+
+    #Productive .Prodctive-Poster {
+        width: 100%;
+    }
+
+    #Productive .Productive-text {
+        width: 100%;
+    }
+
+    #Productive .Productive-text h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #Productive .Productive-text p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+    #Productive .Productive-text a {
+        font-size: 15px;
+    }
+    #Review{
+       flex-direction: column;
+       height: 100vh;
+       background-position-y: 0;
+       padding-top: 25px;
+    }
+    #Review .Review-Card{
+        width: 100%;
+        height: 30%;
+    }
+    #Review .Review-Card p{
+        font-size: 13px;
+    }
+    #EarlyAccess{
+         width: 90%;
+        padding: 2em;
+        height: 60vh;
+        bottom: -200px;
+    }
+    #EarlyAccess h2{
+        font-size: 20px;
+    }
+    #EarlyAccess  .FormSection{
+        padding: 15px 5px;
+        gap: 1em;
+    }
+    #EarlyAccess .FormSection form{
+        flex-direction: column;
+    }
+    #EarlyAccess .FormSection form #EmailBox{
+        width: 100%;
+    }
+    #EarlyAccess .FormSection form #AccessFreeButton{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150vh;
+        padding: 20px 0;
+    }
+    footer .Logo-Location{
+        padding-top: 20em;
+        justify-content: space-around;
+        height: 30%;
+        width: 100%;
+    }
+    footer .Contact{
+        margin-top: 30px;
+       justify-content: flex-start;
+       height: 15%;
+        width: 100%;
+    }
+    footer .Links{
+        grid-template-columns: 0.5fr;
+        gap: 1.5em;
+        width: 100%;
+    }
+    footer .SocialSites{
+        width: 100%;
+    }
+
+}
